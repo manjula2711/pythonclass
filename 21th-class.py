@@ -51,3 +51,81 @@ print(list4)
 #extend
 list4.extend("a")
 print(list4)
+
+
+#exceptions
+#zero division error
+#print(1/0)
+
+#arr=[1,2,3]
+#print(arr[5])#IndexError
+
+try:
+    x=23/0
+    print(x)
+except:
+    print("exception occured")#exception occured
+
+try:
+    x=23/10
+    print(x)
+except:
+    print("exception occured")#2.3
+
+try:
+    print(1/0)
+except IndexError:
+    print("index error occured")
+except RuntimeError:
+    print("run time error occured")
+except ZeroDivisionError:
+    print("zero division error occured")
+
+
+try:
+    print(1/10)
+except IndexError:
+    print("index error occured")
+except RuntimeError:
+    print("run time error occured")
+except ImportError:
+    print("import error")
+else:
+    print("control is inside else")#executed after try if there is no exception in try
+
+try:
+    print(1/0)
+except ZeroDivisionError as err:
+    print(err)#division by zero
+finally:
+    print("finally will always get executed")
+
+#raise an exception intentionally
+arr=[1,2,3,4,5]
+try:
+    if len(arr)>=4:
+        raise ValueError("length of the array greater or equal to 4")
+    else:
+        print("everything is fine")
+except ValueError as err:
+    print(err)
+
+#how to define a custom exception
+class CustomException(Exception):
+    "This is a custom exception"
+    pass
+  
+  
+try:
+    x=20
+    if(x==20):
+        raise CustomException
+    else:
+        print("x is not 20")
+except CustomException as err:
+    print("exception occured")
+
+
+
+
+
