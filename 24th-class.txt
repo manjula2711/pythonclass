@@ -1,0 +1,47 @@
+#functions
+#advantanges
+#1.readable,clean,lightweight and 2. reusability of code
+#how to define and call a function
+def add():
+   a=10
+   b=20
+   print(a+b)
+add()
+
+def add():
+    a=int(input())
+    b=int(input())
+    print(a+b)
+add()
+  
+def add():
+    try:
+      a=int(input())
+    except ValueError as err:
+      print(err)
+    try:
+      b=int(input())
+    except ValueError as err:
+      print(err)
+    print(a+b)
+
+add()
+
+def addNumbers():
+   a=10
+   b=20
+   return(a+b)
+
+sum=addNumbers()
+print(sum)
+
+
+def addNumbers(a,b):#a,b are arguments
+   return a+b
+sum=addNumbers(10,30)#parameters
+print(sum)
+
+def returningMultipleValues():
+   return 10,20,30
+output=returningMultipleValues()
+print(output)
