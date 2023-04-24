@@ -47,6 +47,26 @@ output=returningMultipleValues()
 print(output)
 
 
+
+def doJob(n):
+   if n<=2:
+      return
+   print(n)
+   doJob(n-1)
+   print(n)
+
+doJob(10)   #10 9 8 7 6 5 4 3 3 4 5 6 7 8 9 10
+
+def doJob2(n):
+   if n<=5:
+      return
+   doJob2(n-1)
+   print(n)
+   doJob2(n-1)
+   print(n)
+doJob2(8) #66766786676678
+
+
 def fib(n):
    if n<=0:
       print("invalid argument")
@@ -69,4 +89,20 @@ def fib(n):
       count+=1
 
 print(fib(10))
+
+def findLcm(a,b):
+    if a>b:
+      greater=a
+    else:
+      greater=b
+     
+    while True:
+      if((greater % a==0) and (greater%b)==0):
+       lcm = greater
+       break
+    greater+=1
+    return lcm
+print(findLcm(18,20))
+
+
       
