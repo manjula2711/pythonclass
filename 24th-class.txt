@@ -8,12 +8,17 @@ def add():
    print(a+b)
 add()
 
+
+
 def add():
     a=int(input())
     b=int(input())
     print(a+b)
 add()
   
+
+
+
 def add():
     try:
       a=int(input())
@@ -27,6 +32,9 @@ def add():
 
 add()
 
+
+
+
 def addNumbers():
    a=10
    b=20
@@ -34,6 +42,9 @@ def addNumbers():
 
 sum=addNumbers()
 print(sum)
+
+
+
 
 
 def addNumbers(a,b):#a,b are arguments
@@ -47,24 +58,6 @@ output=returningMultipleValues()
 print(output)
 
 
-
-def doJob(n):
-   if n<=2:
-      return
-   print(n)
-   doJob(n-1)
-   print(n)
-
-doJob(10)   #10 9 8 7 6 5 4 3 3 4 5 6 7 8 9 10
-
-def doJob2(n):
-   if n<=5:
-      return
-   doJob2(n-1)
-   print(n)
-   doJob2(n-1)
-   print(n)
-doJob2(8) #66766786676678
 
 
 def fib(n):
@@ -90,6 +83,9 @@ def fib(n):
 
 print(fib(10))
 
+
+
+
 def findLcm(a,b):
     if a>b:
       greater=a
@@ -103,6 +99,30 @@ def findLcm(a,b):
     greater+=1
     return lcm
 print(findLcm(18,20))
+
+
+
+
+def doJob(n):
+   if n<=2:
+      return
+   print(n)
+   doJob(n-1)
+   print(n)
+
+doJob(10)   #10 9 8 7 6 5 4 3 3 4 5 6 7 8 9 10
+
+
+
+
+def doJob2(n):
+   if n<=5:
+      return
+   doJob2(n-1)
+   print(n)
+   doJob2(n-1)
+   print(n)
+doJob2(8) #66766786676678
 
 
       
