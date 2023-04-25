@@ -59,4 +59,35 @@ def fib(n):
     return fib(n-1)+fib(n-2)+1
 print(fib(5))
     
+
+
+
+
+#SETS
+#1.sets are unordered and unindexed
+#2.sets do not allow duplicates elements
+#4.insertion order is not mentained
+arr = [1,2,1,2,1,2,3,4,5,3,4,5,6,7]
+my_set=set(arr)
+print(my_set)
+my_set.add(34)#add 34 to the my_set
+my_set.clear()
+my_set.copy()
+
+
+#DICTIONARIES
+#1.key-value pair
+#2.orderd
+#3.changeable
+#4.no duplicates
+my_dict = { "name": "manjula",
+            "age" : 20
+          }
+
+print(type(my_dict))
+print(my_dict["name"])
+my_dict["name"]="manju"
+print(my_dict["name"])
+
+
  
