@@ -89,5 +89,11 @@ print(my_dict["name"])
 my_dict["name"]="manju"
 print(my_dict["name"])
 
+updated_name={
+    "name" : "swetha"
+}
+my_dict.update(updated_name)
+print(my_dict["name"])
+
 
  
