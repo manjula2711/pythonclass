@@ -96,4 +96,21 @@ my_dict.update(updated_name)
 print(my_dict["name"])
 
 
+
+#OBJECT ORIENTED PROGRAMMING
+# class is a blueprint of object
+#logic should revolue around the concept of classes and instance of those classes
+#object-instance of class
+class car:
+    engineType = "strongest Engine"
+    numbersOfTyers = 4
+    numberOfWindow = 6
+    isFridgeAvailable = True
+
+car1 = car()
+print(car1.engineType)
+
+
+
+
  
