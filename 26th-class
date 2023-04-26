@@ -24,3 +24,38 @@ del my_book
 
 #constructer : it will be executed before creation of an object
 #destructer  :it will be executed just before destruction of an object
+#Inheritance : child classes will have access to parent resources
+#parent class wont access the properties of child class
+
+
+class School:
+    name = "RJSIS"
+    def __init__(self,age):
+        self.age=age
+    def getAge(self):
+        return self.age
+class SubSchool(School):
+    def __init__(self):
+        print("child constructor")
+    def getParentName(self):
+        return "RJSIS"
+    def getName(self):
+        return "Gyan Sager"
+    
+my_school=SubSchool()
+print(my_school.getParentName())
+print(my_school.getName())
+print(my_school.getAge())
+
+
+
+class Parent1:
+    def getParentName():
+        return "parent1"
+class Parent2:
+    def defParentName():
+        return "parent2"
+class Parent3:
+    def getParentName():
+        return "parent3"
+   
