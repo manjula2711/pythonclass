@@ -1,0 +1,26 @@
+#OOPS
+#1.piller of oops
+#2.implement all pillars
+#3.few famous stuffs
+#project: console based mini project library management system
+
+
+class Book:
+    numberOfPages = 145
+    author = "Manjula"
+    scope = "to be sold in india"
+
+    def __init__(self,zone,dob):
+        self.zone =zone
+        self.dob=dob
+    def __del__(self):
+        print("destructer is called")
+
+my_book = Book("Mystery","27-11-2002")
+print(my_book.numberOfPages)
+print(my_book.zone)
+print(my_book.dob)
+del my_book
+
+#constructer : it will be executed before creation of an object
+#destructer  :it will be executed just before destruction of an object
